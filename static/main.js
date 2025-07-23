@@ -1,7 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 const conv = new showdown.Converter();
 
-const genAI = new GoogleGenerativeAI("AIzaSyAkrc3ExjG4hDVMRynLsYLesVsecIikF-o");
+const genAI = new GoogleGenerativeAI("Your Gemini API");
 const gen_model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 const chat = gen_model.startChat({
     generationConfig: {
